@@ -12,7 +12,7 @@ Angular 新增多語系的文章有很多，[官網網站有說明如何安裝�
 
 以下是使用 NX 語法 `npx nx add @angular/localize --project=angular-monorepo-i18n` 建立多語系專案時出現的錯誤訊息，目前沒有找到解法(2024/03/01)
 
-![image](https://gist.github.com/assets/30744341/b098d377-2dd5-4ef5-8f8a-8c0d9ee22356)
+![image](https://github.com/qazs10015/Nx_Angular_Sample/assets/30744341/903c6860-7237-493a-a42e-e3bc9c7928af)
 
 內容是指套件安裝成功了，但是使用 `ng add` 的方式還伴隨著初始化的動作，而且就是這一動失敗了!!
 
@@ -26,11 +26,11 @@ Angular 新增多語系的文章有很多，[官網網站有說明如何安裝�
 
 1. 需要額外 `import '@angular/localize/init'`，比較不推薦
 
-    ![image](https://gist.github.com/assets/30744341/564bd8ba-9145-4141-8d85-242815cbf940)
+    ![image](https://github.com/qazs10015/Nx_Angular_Sample/assets/30744341/7693ae28-7b65-4d41-934e-74f25993ef05)
 
 2. `tsconfig.base.json`，避免整個專案不認識 `$localize` 這個關鍵字，也是相較之下比較推薦的做法
 
-    ![image](https://gist.github.com/assets/30744341/ab82500c-4838-4b6e-8ad2-f9f8df57db81)
+    ![image](https://github.com/qazs10015/Nx_Angular_Sample/assets/30744341/d65e3cb0-9881-43a7-9d62-71f1a6c589a0)
 
 ### 提取所有的多語系資料
 
@@ -42,6 +42,6 @@ Angular 新增多語系的文章有很多，[官網網站有說明如何安裝�
 
 透過 GUI 介面就可以快速知道指令的內容
 
-![image](https://gist.github.com/assets/30744341/d49f966d-2c84-421d-ad59-d42ef697a268)
+![image](https://github.com/qazs10015/Nx_Angular_Sample/assets/30744341/b491b238-74b3-4efc-9411-9a0027868e70)
 
 接下來步驟就跟一般的 Angular 專案流程沒有區別了！
