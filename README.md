@@ -1,10 +1,10 @@
-## 透過 NX 建立 angular 專案並設定 i18n 心得
+## 透過 Nx 建立 angular 專案並設定 i18n 心得
 
 以下內容建議請先[認識 Angular 如何實作多語系章節](https://angular.io/guide/i18n-overview)之後會比較容易理解
 
 ### 建立 Angular
 
-使用 NX 建立 Angular 的專案不難，透過以下指令即可輕鬆建立(記得把 `{project name}`  改掉)
+使用 Nx 建立 Angular 的專案不難，透過以下指令即可輕鬆建立(記得把 `{project name}`  改掉)
 
 > npx create-nx-workspace@latest {project name} --preset=angular-monorepo
 
@@ -12,7 +12,7 @@
 
 Angular 新增多語系的文章有很多，[官網網站有說明如何安裝套件](https://angular.io/guide/i18n-common-add-package)，也可以參考 [The Will Will Web](https://blog.miniasp.com/post/2024/01/27/Angular-Internationalization-i18n)，這篇很詳細的介紹流程，但是都只有針對 `Angular CLI` 建立的專案
 
-以下是使用 NX 語法 `npx nx add @angular/localize --project=angular-monorepo-i18n` 建立多語系專案時出現的錯誤訊息，目前沒有找到解法(2024/03/01)
+以下是使用 Nx 語法 `npx nx add @angular/localize --project=angular-monorepo-i18n` 建立多語系專案時出現的錯誤訊息，目前沒有找到解法(2024/03/01)
 
 ![image](https://github.com/qazs10015/Nx_Angular_Sample/assets/30744341/903c6860-7237-493a-a42e-e3bc9c7928af)
 
@@ -38,9 +38,9 @@ Angular 新增多語系的文章有很多，[官網網站有說明如何安裝�
 
 在上一個步驟應該就已經準備好要翻譯的資訊了，接下來只要透過指令存取成一個檔案就好
 
-在 Angular CLI 中可以很簡單的透過 `ng extract-i18n` 執行，但是在 NX 中這樣的指令無法正常執行
+在 `Angular CLI` 中可以很簡單的透過 `ng extract-i18n` 執行，但是在 Nx 中這樣的指令無法正常執行
 
-需要透過 NX 自己的指令，推薦安裝 VSCode 套件 - [Nx Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console)
+需要透過 Nx 自己的指令，推薦安裝 VSCode 套件 - [Nx Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console)
 
 透過 GUI 介面就可以快速知道指令的內容
 
