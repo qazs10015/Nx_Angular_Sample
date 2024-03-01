@@ -1,0 +1,69 @@
+{
+  "name": "angular-monorepo-i18n",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "angular-monorepo-i18n",
+  "sourceRoot": "apps/angular-monorepo-i18n/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/angular-monorepo-i18n",
+        "index": "apps/angular-monorepo-i18n/src/index.html",
+        "browser": "apps/angular-monorepo-i18n/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/angular-monorepo-i18n/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/angular-monorepo-i18n/src/favicon.ico",
+          "apps/angular-monorepo-i18n/src/assets"
+        ],
+        "styles": ["apps/angular-monorepo-i18n/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "angular-monorepo-i18n:build:production"
+        },
+        "development": {
+          "buildTarget": "angular-monorepo-i18n:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "angular-monorepo-i18n:build"
+      }
+    }
+  }
+}
