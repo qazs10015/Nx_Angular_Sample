@@ -10,5 +10,5 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular-monorepo-i18n';
+  title = $localize`angular-monorepo-i18n1`;
 }

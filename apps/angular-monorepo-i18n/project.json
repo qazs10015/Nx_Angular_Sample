@@ -5,11 +5,21 @@
   "prefix": "angular-monorepo-i18n",
   "sourceRoot": "apps/angular-monorepo-i18n/src",
   "tags": [],
+  "i18n": {
+    "sourceLocale": "zh-Hant",
+    "locales": {
+      "en-US": {
+        "translation": "apps/angular-monorepo-i18n/src/local/messages.en-US.xlf",
+        "baseHref": "/en-US/"
+      }
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "localize": true,
         "outputPath": "dist/apps/angular-monorepo-i18n",
         "index": "apps/angular-monorepo-i18n/src/index.html",
         "browser": "apps/angular-monorepo-i18n/src/main.ts",
@@ -43,6 +53,14 @@
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true
+        },
+        "zh-Hant": {
+          "localize": ["zh-Hant"],
+          "baseHref": "/zh-Hant/"
+        },
+        "en-US": {
+          "localize": ["en-US"],
+          "baseHref": "/en-US/"
         }
       },
       "defaultConfiguration": "production"
@@ -55,6 +73,12 @@
         },
         "development": {
           "buildTarget": "angular-monorepo-i18n:build:development"
+        },
+        "zh-Hant": {
+          "buildTarget": "angular-monorepo-i18n:build:development,zh-Hant"
+        },
+        "en-US": {
+          "buildTarget": "angular-monorepo-i18n:build:development,en-US"
         }
       },
       "defaultConfiguration": "development"

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="zh-Hant" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2057013991776501057" datatype="html">
+        <source>哈囉世界</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/angular-monorepo-i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="841858543405135855" datatype="html">
+        <source>沒有元素</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/angular-monorepo-i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8022582046775660363" datatype="html">
+        <source>哈囉</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/angular-monorepo-i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">放置在首頁的招呼語</note>
+      </trans-unit>
+      <trans-unit id="822056772914261675" datatype="html">
+        <source>這是 Angular 標誌</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/angular-monorepo-i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8611809314806836173" datatype="html">
+        <source>angular-monorepo-i18n1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/angular-monorepo-i18n/src/app/app.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
