@@ -1,5 +1,7 @@
 ## 透過 NX 建立 angular 專案並設定 i18n 心得
 
+以下內容建議請先[認識 Angular 如何實作多語系章節](https://angular.io/guide/i18n-overview)之後會比較容易理解
+
 ### 建立 Angular
 
 使用 NX 建立 Angular 的專案不難，透過以下指令即可輕鬆建立(記得把 `{project name}`  改掉)
